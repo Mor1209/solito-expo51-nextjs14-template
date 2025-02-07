@@ -4,8 +4,8 @@
   "main": "index.ts",
   "dependencies": {
     "moti": "latest",
-    "nativewind": "2.0.11",
-    "solito": "4.0.1"
+    "nativewind": "^4.0.13",
+    "solito": "latest"
   },
   "sideEffects": false
 }
