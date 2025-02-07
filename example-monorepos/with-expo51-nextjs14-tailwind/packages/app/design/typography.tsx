@@ -16,7 +16,7 @@ export const P = styled(NativeText, 'text-base text-black my-4')
 export const H1 = styled(NativeText, 'text-3xl font-extrabold my-4')
 H1.defaultProps = {
   accessibilityLevel: 1,
-  accessibilityRole: 'header',
+  role: 'heading',
 }
 
 /**
@@ -52,7 +52,7 @@ export const A = forwardRef<NativeText, StyledProps<AProps>>(function A(
 
   return (
     <Text
-      accessibilityRole="link"
+      role="link"
       className={`text-blue-500 hover:underline ${className}`}
       {...props}
       {...nativeAProps}
