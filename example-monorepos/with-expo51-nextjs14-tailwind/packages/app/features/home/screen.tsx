@@ -30,10 +30,6 @@ const HomeScreen = () => {
             rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
           }
         }}
-        transition={{
-          type: 'timing',
-          duration: 150,
-        }}
       >
         <Text selectable={false} className="text-base font-bold mt-5">
           Moti Link
