@@ -36,9 +36,6 @@ const HomeScreen = () => {
           Moti Link
         </Text>
       </MotiLink>
-      <Link href="/user/fernando" prefetch={true}>
-        <Text>Link</Text>
-      </Link>
     </View>
   );
 };
