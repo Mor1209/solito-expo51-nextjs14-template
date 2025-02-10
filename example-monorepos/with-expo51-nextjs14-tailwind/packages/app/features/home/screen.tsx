@@ -1,6 +1,7 @@
 import { Text, View } from "react-native";
 import { MotiLink } from "solito/moti/app";
 import { vars } from "nativewind";
+import Link from "next/link";
 
 const theme = vars({
   "--theme-fg": "red",
@@ -35,6 +36,9 @@ const HomeScreen = () => {
           Moti Link
         </Text>
       </MotiLink>
+      <Link href="/user/fernando" prefetch={true}>
+        <Text>Link</Text>
+      </Link>
     </View>
   );
 };

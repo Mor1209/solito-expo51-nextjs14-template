@@ -4,7 +4,7 @@ module.exports = function (api) {
     presets: [
       [
         'babel-preset-expo',
-        { jsxRuntime: 'automatic', jsxImportSource: 'nativewind' },
+        { jsxImportSource: 'nativewind' },
       ],
       'nativewind/babel',
     ],
