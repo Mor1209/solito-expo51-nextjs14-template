@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "@expo/vector-icons": "^14.0.2",
     "@acme/app": "workspace:*",
+    "@expo/vector-icons": "^14.0.2",
     "expo": "^52.0.0",
     "expo-dev-client": "~5.0.11",
     "expo-font": "~13.0.3",
@@ -21,15 +21,31 @@
     "react-native-web": "~0.19.13"
   },
   "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "@acme/prettier-config": "workspace:*",
+    "@acme/tailwind-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "@babel/core": "^7.26.7",
-    "tailwindcss": "^3.3.5",
-    "typescript": "~5.3.3"
+    "@babel/preset-env": "^7.26.7",
+    "@babel/runtime": "^7.26.7",
+    "@types/babel__core": "^7.20.5",
+    "@types/react": "catalog:react18",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
   },
+  "prettier": "@acme/prettier-config",
   "scripts": {
-    "start": "expo run:ios --device",
+    "clean": "git clean -xdf .cache .expo .turbo android ios node_modules",
+    "dev": "expo start",
+    "dev:android": "expo start --android",
+    "dev:ios": "expo start --ios",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
   },
   "main": "index.js",
   "version": "1.0.0",
