@@ -5,7 +5,7 @@ import { SplashScreen, Stack } from "expo-router";
 import { vars } from "nativewind";
 import { memo, useEffect } from "react";
 import { View, StyleSheet } from "react-native";
-import { Provider } from 'app/provider'
+import { Provider } from '@acme/app/provider'
 
 export {
   // Catch any errors thrown by the Layout component.

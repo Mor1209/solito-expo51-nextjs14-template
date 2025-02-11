@@ -1,10 +1,11 @@
 {
   "version": "0.0.0",
-  "name": "app",
+  "name": "@acme/app",
   "main": "index.ts",
   "dependencies": {
     "moti": "latest",
     "nativewind": "^4.0.13",
+    "react-native": "0.76.7",
     "solito": "latest"
   },
   "sideEffects": false

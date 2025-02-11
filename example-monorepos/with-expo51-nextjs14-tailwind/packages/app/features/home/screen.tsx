@@ -1,7 +1,6 @@
 import { Text, View } from "react-native";
 import { MotiLink } from "solito/moti/app";
 import { vars } from "nativewind";
-import Link from "next/link";
 
 const theme = vars({
   "--theme-fg": "red",

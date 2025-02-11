@@ -1,4 +1,5 @@
 const { withExpo } = require('@expo/next-adapter')
+const path = require('path')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -14,13 +15,20 @@ const nextConfig = {
     'react-native-web',
     'solito',
     'moti',
-    'app',
+    '@acme/app',
     'react-native-reanimated',
     'nativewind',
     'react-native-gesture-handler',
     'react-native-css-interop',
     'react-native-svg',
   ],
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@acme/app': path.resolve(__dirname, '../../packages/app'),
+    }
+    return config
+  },
 }
 
 module.exports = withExpo(nextConfig)

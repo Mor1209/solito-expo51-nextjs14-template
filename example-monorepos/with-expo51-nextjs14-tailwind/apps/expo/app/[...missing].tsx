@@ -1,4 +1,4 @@
-import { MissingScreen } from 'app/features/missing/screen'
+import { MissingScreen } from '@acme/app/features/missing/screen'
 
 export default function UserDetail() {
   return <MissingScreen />

@@ -1,4 +1,4 @@
 "use client"
-import TabTwoScreen from 'app/features/two/screen'
+import TabTwoScreen from '@acme/app/features/two/screen'
 
 export default TabTwoScreen
